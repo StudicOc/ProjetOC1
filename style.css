@@ -1,0 +1,701 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/css/Raleway-Thin.ttf") format("truetype");
+  src: url("/css/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1168px;
+  box-shadow: 0 0 10px #f2f2f2;
+  -moz-box-shadow: 0 0 10px #f2f2f2;
+  box-shadow: 0 0 10px #f2f2f2;
+}
+.logo {
+  height: 3em;
+  width: 5em;
+  padding: 45px 0px 0px 20px;
+  margin-right: 43rem;
+}
+
+nav {
+  display: -moz-box;
+  display: flex;
+}
+nav ul {
+  display: -moz-inline-box;
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  padding-right: 3rem;
+}
+.link-register-nav a {
+  color: #0065fc;
+  line-height: 5.2;
+  font-weight: bold;
+  display: contents;
+}
+.Accommodation {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 2rem;
+}
+
+.Tittle-header {
+  padding: 6px 0 0 0;
+  padding-left: 20px;
+}
+
+.p1 {
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 13px 16px;
+  border: 2px solid #f2f2f2;
+  font-weight: bold;
+}
+.input-search {
+  padding: 0.5rem;
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+button {
+  padding: 15px 18px;
+  color: white;
+  border: 0.5px solid #f2f2f2;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #0065fc;
+}
+
+.fa-map-marker-alt {
+  border: 2px solid #f2f2f2;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  -moz-border-radius-topleft: 2rem;
+  border-top-left-radius: 2rem;
+  -moz-border-radius-bottomleft: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 0.9rem 0.9rem;
+  background-color: #f2f2f2;
+  display: -moz-inline-box;
+  display: inline-flex;
+  vertical-align: bottom; /* L'alignement vertical d'une boîte en ligne (inline ou block)*/
+}
+.fa-search {
+  display: none;
+}
+
+#filter ul {
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+#filter ul li {
+  list-style: none;
+  display: -moz-inline-box;
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  font-weight: bold;
+  border: 3px solid #f2f2f2;
+  -moz-border-radius: 3rem;
+  border-radius: 3rem;
+  margin: 1rem;
+}
+
+#filter ul li:hover {
+  background-color: #0065fc;
+  cursor: pointer; /* souris lors de la selection */
+  -moz-transition: transform 0.5s, -moz-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -moz-transform 0.5s;
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#filter li {
+  text-align: center;
+  padding-right: 0.9em;
+}
+h1 {
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+  color: #0065fc;
+  width: 1rem; /* pour un rendu carré */
+  height: 1rem; /* pour un rendu carré */
+  -moz-border-radius: 50%;
+  border-radius: 50%; /* rendu ideal pour un cercle*/
+  background-color: #deebff; /* couleur de fond */
+  padding: 1.1rem;
+  margin-right: 1.1rem;
+  margin-left: -0.5rem;
+}
+
+.result {
+  padding: 2px 0 0 10px;
+  margin-bottom: 45px;
+}
+.p2 {
+  margin-bottom: 1rem;
+}
+
+.fa-info {
+  margin: 0rem 0.3rem; /* espace droit entre le logo et p */
+  border: 2.5px solid #f2f2f2;
+  width: 1em; /* pour un rendu carré */
+  height: 1em; /* pour un rendu carré */
+  -moz-border-radius: 50%;
+  border-radius: 50%; /* rendu ideal pour un cercle*/
+  color: #0065fc; /*couleur du logo*/
+  padding: 6px; /*marge intérieur*/
+  font-size: 0.4em; /*taille du logo*/
+  display: inline;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding: 1rem;
+  line-height: 4rem;
+}
+.display-filter {
+  display: -moz-inline-box;
+  display: inline-flex;
+}
+.image {
+  width: 190px;
+  height: 100px;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  padding-top: 1rem;
+}
+
+h4 {
+  padding-bottom: 0.3em;
+}
+
+.fa-star {
+  color: #0065fc;
+  font-size: 0.6em;
+}
+
+.price {
+  font-size: 0.8rem;
+}
+.parent {
+  display: -moz-box;
+  display: flex;
+}
+.First-section {
+  background-color: #f2f2f2;
+  padding: 0px 11px 0px 11px;
+  margin-left: 3rem;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+article {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  padding: 6px 6px 6px 6px;
+  margin: 10px 10px;
+  background-color: white;
+  -moz-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+a {
+  color: inherit; /* Aucune couleur de fond pour les liens articles et listes*/
+  text-decoration: none;
+}
+.Lodging-article {
+  /*premiere section contenant les articles*/
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.More-element {
+  /* Texte de fin de First-section*/
+  font-weight: bold;
+  padding: 2rem 1rem;
+}
+article:hover {
+  /* Effet au survol*/
+  cursor: pointer;
+  transition: transform 0.5s, -moz-transform 0.5s;
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.location-popular {
+  /* Deuxiéme section*/
+  width: 115px;
+  height: 105px;
+  -moz-border-radius: 1rem 0rem 0 1rem; /* Compatibilité avec Firefox*/
+  border-radius: 1rem 0rem 0 1rem; /*Bordure arrondie angles gauche */
+}
+
+.Second-section article {
+  /* Selection des articles de la deuxiéme section*/
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 295px;
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  padding: 6px 6px 2px 6px;
+  margin: 28px 15px;
+  background-color: white;
+}
+
+.text-img {
+  /* description apporté a chaque article de la section*/
+  float: right;
+  padding: 0.5rem 0.5rem 0 0;
+  margin-right: 2rem;
+}
+.price-activity {
+  font-size: 0.8rem;
+  padding-bottom: 20px;
+}
+h5 {
+  padding-bottom: 9px;
+  font-size: 0.9rem;
+}
+
+aside:hover {
+  cursor: pointer; /*curosr s'affiche lors du passage de la souris*/
+  -moz-transition: transform 0.5s, -moz-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -moz-transform 0.5s;
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.fa-chart-line {
+  padding-left: 4.9rem;
+}
+
+.Second-section {
+  background-color: #f2f2f2;
+  padding: 0px 10px 0px 10px;
+  margin-left: 20px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.Last-section .article-section-activity {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 0;
+  margin: 2.4rem 1.1rem 1.1rem 0.8rem;
+}
+
+.Last-section {
+  margin: 1rem 2rem;
+}
+.place-1-activity {
+  height: 310px;
+  width: 240px;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.tittle-of-place {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+.place-2-activity {
+  height: 132px;
+  width: 260px;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.place-3-activity {
+  width: 260px;
+  height: 100px;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+.place-4-activity {
+  height: 310px;
+  width: 240px;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+.tittle-of-place-4 {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+.place-5-activity {
+  height: 100px;
+  width: 260px;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+h4 {
+  font-size: small;
+}
+.place-6-activity {
+  height: 130px;
+  width: 260px;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.Article-activity-flex {
+  display: -moz-inline-box;
+  display: inline-flex;
+  -moz-box-align: self-start;
+  align-items: self-start;
+}
+
+.item-2-3-flex {
+  margin-bottom: 1rem; /*marge extérieur des blocs*/
+}
+
+.Footer {
+  display: -moz-inline-box;
+  display: inline-flex;
+  padding-left: 4.5rem;
+}
+.mainfooter {
+  font-size: 0.8rem;
+  background-color: #f2f2f2;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.mainfooter li {
+  margin-bottom: 0.8rem;
+  list-style-type: none;
+}
+.About-logding {
+  margin: 0 12rem; /* 12 marges extérieurs left and right*/
+}
+
+@media screen and (min-width: 1000px) /* Pour les grands écrans */ {
+  body {
+    max-width: 1168px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 999px) /* Pour les tablettes */ {
+  .logo {
+    padding: 0%;
+    margin: 2rem 17rem 0 2rem;
+  }
+
+  #filter ul {
+    display: block; /* Valeur par défaut*/
+  }
+  #filter ul li {
+    margin: 0.5rem;
+  }
+  .Accommodation {
+    padding-top: 1.5rem;
+  }
+
+  .parent {
+    display: grid;
+  }
+
+  .First-section {
+    -moz-box-ordinal-group: 3;
+    order: 2;
+    margin: 20px 20px 0 20px;
+  }
+
+  .Second-section {
+    -moz-box-ordinal-group: 2;
+    order: 1;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 12rem;
+  }
+  .Article-activity-flex {
+    display: block;
+    margin-left: 14rem;
+    margin-bottom: 4rem;
+  }
+
+  .item-2-3-flex,
+  .item-5-6-flex,
+  .article-section-activity {
+    width: min-content;
+  }
+  .place-2-activity {
+    height: 132px;
+    width: 260px;
+  }
+
+  .About-logding {
+    margin: 0 5rem 0 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) /* Pour les mobiles */ {
+  h1 {
+    font-size: 1.3rem; /* Taille de police*/
+  }
+  .p2 {
+    margin: 1rem 1rem;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  nav {
+    display: block; /* Effacement du Flexbox d'origin desktop*/
+  }
+
+  nav ul li {
+    padding-right: 0;
+    margin-top: 0;
+  }
+  .Tittle-header {
+    margin-top: 1rem;
+  }
+  .link-register-nav {
+    /*retiré du flux normal*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 18rem;
+  }
+  .Accommodation {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    padding: 5px 30px 0px 50px;
+  }
+  .display-filter {
+    display: block; /* Effacement du Flexbox d'origin inline-flex*/
+  }
+  .activity {
+    border-bottom: 2px solid silver;
+    padding: 5px 70px 0px 50px;
+  }
+  .fa-search {
+    display: inline;
+  }
+  .input-search {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  input {
+    width: 100%;
+  }
+  span {
+    display: none;
+  }
+  button {
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-left-radius: 15px;
+  }
+  #filter ul {
+    display: block; /* Valeur par défaut*/
+  }
+
+  h2 {
+    line-height: 0;
+  }
+  #filter ul li {
+    margin: 0.5rem;
+  }
+  .parent {
+    display: grid; /* raccourci utilisé pour un meilleur rendu en bloc */
+  }
+
+  .First-section {
+    margin-left: 1rem;
+    -moz-box-ordinal-group: 3;
+    order: 2;
+    background: none;
+  }
+  .Second-section {
+    -moz-box-ordinal-group: 2;
+    order: 1;
+    margin: 2rem 0;
+    width: inherit; /* propriété prend la valeur calculée de la propriété pour l'élément parent, correction des débordements via 
+    Devtools*/
+    -moz-border-radius: inherit;
+    border-radius: inherit;
+    padding-top: 2rem;
+  }
+
+  .image {
+    width: 275px;
+  }
+  h3 {
+    padding-top: 0;
+  }
+  .place-1-activity,
+  .place-3-activity,
+  .place-2-activity,
+  .place-5-activity,
+  .place-6-activity,
+  .place-4-activity {
+    width: 280px;
+  }
+  .place-4-activity,
+  .place-1-activity {
+    height: 132px;
+  }
+
+  .Article-activity-flex {
+    display: block;
+    margin-left: 0;
+  }
+
+  .article-section-activity {
+    width: fit-content;
+  }
+  .Last-section {
+    margin: 1rem 1rem 2rem 2.5rem;
+  }
+  .Footer {
+    display: block;
+    padding-left: 2.3rem;
+  }
+  .About-logding {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 320px) /* Pour trés petits les mobiles */ {
+  .logo {
+    height: 2em;
+    width: 4em;
+  }
+
+  nav {
+    display: block; /* Effacement du Flexbox d'origin desktop*/
+  }
+
+  nav ul li {
+    padding-right: 0;
+    margin-top: 0;
+  }
+  .Tittle-header {
+    margin-top: 1rem;
+  }
+  .link-register-nav {
+    margin-left: 12rem;
+  }
+  .activity {
+    border-bottom: 2px solid silver;
+    padding: 0px 35px 0px 32px;
+  }
+  .Accommodation {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+  }
+  .display-filter {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    line-height: 0;
+  }
+  .fa-search {
+    display: inline;
+  }
+  .input-search {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  input {
+    width: 100%;
+  }
+  span {
+    display: none;
+  }
+  button {
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-left-radius: 15px;
+  }
+  .display-filter {
+    display: block;
+  }
+  #filter ul {
+    display: block;
+  }
+
+  .First-section {
+    margin-left: 0;
+    -moz-box-ordinal-group: 3;
+    order: 2;
+    background: none;
+  }
+  .Second-section {
+    -moz-box-ordinal-group: 2;
+    order: 1;
+    width: -moz-min-content;
+    width: min-content;
+    margin-left: 3rem;
+  }
+
+  .Second-section article {
+    width: 115px;
+  }
+
+  .text-img {
+    display: contents; /*L’élément ne génère aucune boite à l’affichage mais ses enfants oui*/
+  }
+  .Last-section {
+    margin: 0 0rem 3rem 0.5rem;
+  }
+
+  .Article-activity-flex {
+    display: block;
+  }
+
+  .Footer {
+    display: block;
+  }
+  .About-logding {
+    margin: 0 0;
+  }
+}
