@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Raleway";
-  src: url("/css/Raleway-Thin.ttf") format("truetype");
-  src: url("/css/Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url("../Font/Raleway-Thin.ttf") format("truetype");
+  src: url("../Font/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 * {
@@ -496,9 +496,8 @@ h4 {
   .link-register-nav {
     /*retiré du flux normal*/
     position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 18rem;
+    top: 12px;
+    right: 3px;
   }
   .Accommodation {
     border-top: none;
