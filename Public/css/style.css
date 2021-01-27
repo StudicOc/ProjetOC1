@@ -246,9 +246,8 @@ a {
 .Lodging-article {
   /*premiere section contenant les articles*/
   display: -moz-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: flex; /* Les éléments se mettent les uns à côté des autres */
+  justify-content: space-around; /* Mettre des espaces entre les éléments mais aussi autour*/
   margin-top: 10px;
 }
 .icon-star-4 .fas.fa-star:nth-child(4) {
