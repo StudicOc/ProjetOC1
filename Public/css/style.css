@@ -191,6 +191,7 @@ h2 {
 .image {
   width: 190px;
   height: 100px;
+  object-fit: cover;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
 }
@@ -268,6 +269,7 @@ article:hover {
   /* Deuxiéme section*/
   width: 115px;
   height: 105px;
+  object-fit: cover;
   -moz-border-radius: 1rem 0rem 0 1rem; /* Compatibilité avec Firefox*/
   border-radius: 1rem 0rem 0 1rem; /*Bordure arrondie angles gauche */
 }
@@ -336,6 +338,7 @@ aside:hover {
 .place-1-activity {
   height: 310px;
   width: 240px;
+  object-fit: cover;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
 }
@@ -348,11 +351,13 @@ aside:hover {
   width: 260px;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 }
 
 .place-3-activity {
   width: 260px;
   height: 100px;
+  object-fit: cover;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
 }
@@ -361,6 +366,7 @@ aside:hover {
   width: 240px;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 }
 .tittle-of-place-4 {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
@@ -368,6 +374,7 @@ aside:hover {
 .place-5-activity {
   height: 100px;
   width: 260px;
+  object-fit: cover;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
 }
@@ -377,6 +384,7 @@ h4 {
 .place-6-activity {
   height: 130px;
   width: 260px;
+  object-fit: cover;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
 }
@@ -473,6 +481,9 @@ h4 {
 }
 
 @media screen and (max-width: 600px) /* Pour les mobiles */ {
+  body {
+    max-width: fit-content;
+  }
   h1 {
     font-size: 1.3rem; /* Taille de police*/
   }
