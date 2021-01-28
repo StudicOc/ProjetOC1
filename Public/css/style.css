@@ -343,7 +343,7 @@ aside:hover {
 }
 
 .Last-section {
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
 }
 .place-1-activity {
   height: 310px;
@@ -410,8 +410,9 @@ h4 {
 
 .Footer {
   display: -moz-inline-box;
-  display: inline-flex;
-  margin-left: 2rem;
+  margin-right: 20rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .mainfooter {
