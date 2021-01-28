@@ -438,6 +438,7 @@ h4 {
 @media screen and (max-width: 999px) /* Pour les tablettes */ {
   body {
     width: 100%;
+    box-shadow: none;
   }
 
   .logo {
@@ -490,6 +491,9 @@ h4 {
 
   .About-logding {
     margin: 0 5rem 0 5rem;
+  }
+  .Footer {
+    margin-right: 0;
   }
 }
 
@@ -628,6 +632,7 @@ h4 {
 @media screen and (max-width: 320px) /* Pour les petites résolutions */ {
   body {
     width: 100%;
+    box-shadow: none;
   }
   nav ul li {
     padding-right: 0;
