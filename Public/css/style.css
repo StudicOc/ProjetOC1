@@ -211,11 +211,11 @@ h4 {
 .parent {
   display: -moz-box;
   display: flex;
+  justify-content: space-around;
 }
 .First-section {
   background-color: #f2f2f2;
   padding: 0px 11px 0px 11px;
-  margin-left: 3rem;
   -moz-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
 }
@@ -238,10 +238,8 @@ a {
   text-decoration: none;
 }
 .Lodging-article {
-  /*premiere section contenant les articles*/
   display: -moz-box;
   display: flex; /* Les éléments se mettent les uns à côté des autres */
-  justify-content: space-around; /* Mettre des espaces entre les éléments mais aussi autour*/
   margin-top: 10px;
 }
 .icon-star-4 .fas.fa-star:nth-child(4) {
@@ -330,7 +328,6 @@ aside:hover {
 .Second-section {
   background-color: #f2f2f2;
   padding: 0px 10px 0px 10px;
-  margin-left: 20px;
   -moz-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
 }
@@ -405,8 +402,6 @@ h4 {
 .Article-activity-flex {
   display: -moz-inline-box;
   display: inline-flex;
-  -moz-box-align: self-start;
-  align-items: self-start;
 }
 
 .item-2-3-flex {
@@ -416,13 +411,13 @@ h4 {
 .Footer {
   display: -moz-inline-box;
   display: inline-flex;
-  padding-left: 4.5rem;
+  margin-left: 2rem;
 }
+
 .mainfooter {
   font-size: 0.8rem;
   background-color: #f2f2f2;
   padding: 1rem 1rem;
-  margin-bottom: 2rem;
 }
 
 .mainfooter li {
@@ -440,6 +435,10 @@ h4 {
   }
 }
 @media screen and (max-width: 999px) /* Pour les tablettes */ {
+  body {
+    width: 100%;
+  }
+
   .logo {
     padding: 0%;
     margin: 2rem 17rem 0 2rem;
@@ -494,6 +493,10 @@ h4 {
 }
 
 @media screen and (max-width: 600px) /* Pour les mobiles */ {
+  body {
+    width: 100%;
+    box-shadow: none;
+  }
   h1 {
     font-size: 1.3rem; /* Taille de police*/
   }
@@ -511,9 +514,7 @@ h4 {
     padding-right: 0;
     margin-top: 0;
   }
-  .Tittle-header {
-    margin-top: 1rem;
-  }
+
   .link-register-nav {
     /*retiré du flux normal*/
     position: absolute;
@@ -624,15 +625,9 @@ h4 {
 }
 
 @media screen and (max-width: 320px) /* Pour les petites résolutions */ {
-  .logo {
-    height: 2em;
-    width: 4em;
+  body {
+    width: 100%;
   }
-
-  nav {
-    display: block; /* Effacement du Flexbox d'origin desktop*/
-  }
-
   nav ul li {
     padding-right: 0;
     margin-top: 0;
@@ -645,6 +640,7 @@ h4 {
   }
   .activity {
     border-bottom: 2px solid silver;
+    padding: 0px 35px 0px 32px;
   }
   .Accommodation {
     border-top: none;
@@ -663,12 +659,6 @@ h4 {
   .fa-search {
     display: inline;
   }
-  .input-search {
-    padding: 0.5rem 0 0.5rem 0;
-  }
-  input {
-    width: 100%;
-  }
   span {
     display: none;
   }
@@ -685,12 +675,6 @@ h4 {
     display: block;
   }
 
-  .First-section {
-    margin-left: 0;
-    -moz-box-ordinal-group: 3;
-    order: 2;
-    background: none;
-  }
   .Second-section {
     -moz-box-ordinal-group: 2;
     order: 1;
@@ -700,7 +684,7 @@ h4 {
   }
 
   .Second-section article {
-    width: 115px;
+    width: auto;
   }
 
   .text-img {
