@@ -498,12 +498,8 @@ h4 {
 }
 
 @media screen and (max-width: 600px) /* Pour les mobiles */ {
-  body {
-    width: 100%;
-    box-shadow: none;
-  }
-  h1 {
-    font-size: 1.3rem; /* Taille de police*/
+  .Tittle-header {
+    margin-top: 2rem;
   }
   .p2 {
     margin: 1rem 1rem;
@@ -541,9 +537,7 @@ h4 {
   .fa-search {
     display: inline;
   }
-  .input-search {
-    padding: 0.5rem 0 0.5rem 0;
-  }
+
   input {
     width: 100%;
   }
@@ -566,9 +560,6 @@ h4 {
   #filter ul li {
     margin: 0.5rem;
   }
-  .parent {
-    display: grid; /* raccourci utilisé pour un meilleur rendu en bloc */
-  }
 
   .First-section {
     margin-left: 1rem;
@@ -576,6 +567,7 @@ h4 {
     order: 2;
     background: none;
   }
+
   .Second-section {
     -moz-box-ordinal-group: 2;
     order: 1;
