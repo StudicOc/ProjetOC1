@@ -502,6 +502,9 @@ h4 {
     width: 100%;
     box-shadow: none;
   }
+  .Tittle-header {
+    padding-top: 2rem;
+  }
   h1 {
     font-size: 1.3rem; /* Taille de police*/
   }
@@ -541,9 +544,7 @@ h4 {
   .fa-search {
     display: inline;
   }
-  .input-search {
-    padding: 0.5rem 0 0.5rem 0;
-  }
+
   input {
     width: 100%;
   }
@@ -565,9 +566,6 @@ h4 {
   }
   #filter ul li {
     margin: 0.5rem;
-  }
-  .parent {
-    display: grid; /* raccourci utilisé pour un meilleur rendu en bloc */
   }
 
   .First-section {
