@@ -437,8 +437,8 @@ h4 {
 }
 @media screen and (max-width: 999px) /* Pour les tablettes */ {
   .logo {
-    padding: 0%;
-    margin: 2rem 7rem 0 2rem;
+    padding: 0;
+    margin-right: 15rem;
   }
 
   #filter ul {
@@ -550,10 +550,6 @@ h4 {
   h2 {
     line-height: 0;
   }
-  .parent {
-    display: grid; /* raccourci utilisé pour un meilleur rendu en bloc /colonne*/
-    margin-top: 0;
-  }
 
   .First-section {
     -moz-box-ordinal-group: 3;
@@ -612,9 +608,6 @@ h4 {
 }
 
 @media screen and (max-width: 320px) /* Pour les petites résolutions */ {
-  body {
-    box-shadow: none;
-  }
   .link-register-nav {
     margin-left: 12rem;
   }
