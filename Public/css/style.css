@@ -494,7 +494,6 @@ h4 {
 }
 
 @media screen and (max-width: 600px) /* Pour les mobiles */ {
-<<<<<<< HEAD
   body {
     width: 100%;
     box-shadow: none;
@@ -505,8 +504,6 @@ h4 {
   h1 {
     font-size: 1.3rem; /* Taille de police*/
   }
-=======
->>>>>>> dev
   .p2 {
     margin: 1rem 1rem;
   }
@@ -563,14 +560,8 @@ h4 {
   h2 {
     line-height: 0;
   }
-<<<<<<< HEAD
   #filter ul li {
     margin: 0.5rem;
-=======
-  .parent {
-    display: grid; /* raccourci utilisé pour un meilleur rendu en bloc /colonne*/
-    margin-top: 0;
->>>>>>> dev
   }
 
   .First-section {
@@ -623,10 +614,7 @@ h4 {
   }
   .Footer {
     display: block;
-<<<<<<< HEAD
     margin-right: 0;
-=======
->>>>>>> dev
   }
   .About-logding {
     margin: 1.5rem 0 1.5rem 0;
