@@ -37,10 +37,9 @@ nav ul li {
 }
 .link-register-nav a {
   color: #0065fc;
-  line-height: 5.2;
   font-weight: bold;
-  display: contents;
 }
+
 .Accommodation {
   color: #0065fc;
   border-top: 2px solid #0065fc;
@@ -48,8 +47,7 @@ nav ul li {
 }
 
 .Tittle-header {
-  padding: 6px 0 0 0;
-  padding-left: 20px;
+  padding: 2rem 0 0 1rem;
 }
 
 .p1 {
@@ -212,6 +210,7 @@ h4 {
   display: -moz-box;
   display: flex;
   justify-content: space-around;
+  margin-top: 3rem;
 }
 .First-section {
   background-color: #f2f2f2;
@@ -411,6 +410,7 @@ h4 {
 .Footer {
   display: -moz-inline-box;
   margin-right: 20rem;
+  display: -moz-box;
   display: flex;
   justify-content: space-around;
 }
@@ -436,11 +436,6 @@ h4 {
   }
 }
 @media screen and (max-width: 999px) /* Pour les tablettes */ {
-  body {
-    width: 100%;
-    box-shadow: none;
-  }
-
   .logo {
     padding: 0%;
     margin: 2rem 17rem 0 2rem;
@@ -482,6 +477,7 @@ h4 {
   .item-2-3-flex,
   .item-5-6-flex,
   .article-section-activity {
+    width: -moz-min-content;
     width: min-content;
   }
   .place-2-activity {
@@ -498,6 +494,7 @@ h4 {
 }
 
 @media screen and (max-width: 600px) /* Pour les mobiles */ {
+<<<<<<< HEAD
   body {
     width: 100%;
     box-shadow: none;
@@ -508,6 +505,8 @@ h4 {
   h1 {
     font-size: 1.3rem; /* Taille de police*/
   }
+=======
+>>>>>>> dev
   .p2 {
     margin: 1rem 1rem;
   }
@@ -564,12 +563,17 @@ h4 {
   h2 {
     line-height: 0;
   }
+<<<<<<< HEAD
   #filter ul li {
     margin: 0.5rem;
+=======
+  .parent {
+    display: grid; /* raccourci utilisé pour un meilleur rendu en bloc /colonne*/
+    margin-top: 0;
+>>>>>>> dev
   }
 
   .First-section {
-    margin-left: 1rem;
     -moz-box-ordinal-group: 3;
     order: 2;
     background: none;
@@ -586,6 +590,7 @@ h4 {
   }
   .Lodging-article {
     display: block;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .image {
@@ -613,14 +618,15 @@ h4 {
   }
 
   .article-section-activity {
+    width: -moz-fit-content;
     width: fit-content;
-  }
-  .Last-section {
-    margin: 1rem 1rem 2rem 2.5rem;
   }
   .Footer {
     display: block;
+<<<<<<< HEAD
     margin-right: 0;
+=======
+>>>>>>> dev
   }
   .About-logding {
     margin: 1.5rem 0 1.5rem 0;
@@ -628,17 +634,6 @@ h4 {
 }
 
 @media screen and (max-width: 320px) /* Pour les petites résolutions */ {
-  body {
-    width: 100%;
-    box-shadow: none;
-  }
-  nav ul li {
-    padding-right: 0;
-    margin-top: 0;
-  }
-  .Tittle-header {
-    margin-top: 1rem;
-  }
   .link-register-nav {
     margin-left: 12rem;
   }
@@ -654,9 +649,6 @@ h4 {
     display: block;
   }
 
-  h1 {
-    font-size: 1rem;
-  }
   h2 {
     line-height: 0;
   }
