@@ -18,28 +18,35 @@ body {
   height: 3em;
 }
 
-nav {
+.nav-bar {
   display: -moz-box;
-  display: flex; /* Les éléments s'alignent sur l'axe*/
-  justify-content: flex-end; /* L'alignement des éléments se fait sur l'axe principal*/
+  display: flex;
+  justify-content: space-between; /* L'alignement des éléments se fait sur l'axe principal*/
+  padding: 16px; /* Pour avoir un bon espacement*/
 }
-nav ul {
-  display: -moz-inline-box;
-  display: inline-flex; /* Les éléments s'alignent sur l'axe*/
-}
-nav ul li {
+
+.nav-bar ul {
+  display: -moz-box;
+  display: flex;
+  align-items: center;
   list-style-type: none;
-  padding-right: 3rem;
 }
-.link-register-nav a {
+
+.nav-bar ul li a {
+  padding: 16px; /* padding entre les liens, espace*/
+}
+.link-register-nav {
   color: #0065fc;
   font-weight: bold;
 }
 
 .Accommodation {
   color: #0065fc;
-  border-top: 2px solid #0065fc;
-  padding-top: 2rem;
+  border-top: medium solid #0065fc;
+}
+
+.Tittle-header {
+  padding: 2rem 0 0 1rem;
 }
 
 .Tittle-header {
@@ -397,26 +404,21 @@ h4 {
   margin-bottom: 1rem; /*marge extérieur des blocs*/
 }
 
+footer {
+  background-color: #f2f2f2;
+}
 .Footer {
-  display: -moz-inline-box;
-  margin-right: 20rem;
-  display: -moz-box;
   display: flex;
   justify-content: space-around;
+  padding: 16px;
+  margin-right: 20rem;
 }
-
-.mainfooter {
-  font-size: 0.8rem;
-  background-color: #f2f2f2;
-  padding: 1rem;
-}
-
-.mainfooter li {
-  margin-bottom: 0.8rem;
+.Footer ul {
   list-style-type: none;
 }
-.About-logding {
-  margin: 0 12rem; /* 12 marges extérieurs left and right*/
+.Footer ul li {
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 1000px) /* Pour les grands écrans */ {
@@ -492,14 +494,8 @@ h4 {
   .logo {
     margin-bottom: 20px;
   }
-  nav {
-    display: block; /* Effacement du Flexbox d'origin desktop*/
-    margin: 0 0 0 5em;
-  }
-
-  nav ul li {
-    padding-right: 0;
-    margin-top: 0;
+  .nav-bar {
+    display: block;
   }
 
   .link-register-nav {
@@ -603,57 +599,7 @@ h4 {
 }
 
 @media screen and (max-width: 320px) /* Pour les petites résolutions */ {
-  .activity {
-    border-bottom: 2px solid silver;
-    padding: 0px 35px 0px 32px;
-  }
-  .Accommodation {
-    border-top: none;
-    border-bottom: 2px solid #0065fc;
-  }
-  .display-filter {
-    display: block;
-  }
-
-  h2 {
-    line-height: 0;
-  }
-  .fa-search {
-    display: inline;
-  }
-  span {
-    display: none;
-  }
-  button {
-    -moz-border-radius-bottomleft: 15px;
-    border-bottom-left-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    border-top-left-radius: 15px;
-  }
-  .display-filter {
-    display: block;
-  }
-  #filter ul {
-    display: block;
-  }
-  .image {
-    width: auto;
-  }
-  .Second-section {
-    -moz-box-ordinal-group: 2;
-    order: 1;
-    width: -moz-min-content;
-    width: min-content;
-  }
-
-  .Article-activity-flex {
-    display: block;
-  }
-
-  .Footer {
-    display: block;
-  }
-  .About-logding {
-    margin: 0 0;
+  body {
+    box-sizing: border-box;
   }
 }
