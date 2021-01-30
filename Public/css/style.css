@@ -492,6 +492,7 @@ h4 {
   }
   nav {
     display: block; /* Effacement du Flexbox d'origin desktop*/
+    margin: 0 0 0 5em;
   }
 
   nav ul li {
