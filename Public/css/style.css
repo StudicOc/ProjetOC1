@@ -464,6 +464,7 @@ footer {
   .Article-activity-flex {
     display: inline-flex;
     flex-wrap: wrap; /*retour à la ligne des élements */
+    justify-content: center;
   }
   .Last-section .article-section-activity {
     width: max-content;
@@ -478,22 +479,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) /* Pour les mobiles */ {
-  body {
-    width: 100%;
-    box-shadow: none;
-  }
-  .Tittle-header {
-    padding-top: 2rem;
-  }
-  h1 {
-    font-size: 1.3rem; /* Taille de police*/
-  }
-  .p2 {
-    margin: 1rem 1rem;
-  }
-  .logo {
-    margin-bottom: 20px;
-  }
   .nav-bar {
     display: block;
   }
@@ -508,18 +493,29 @@ footer {
     border-top: none;
     border-bottom: medium solid #0065fc;
   }
-  .display-filter {
-    display: block; /* Effacement du Flexbox d'origin inline-flex*/
-  }
+
   .activity {
     border-bottom: medium solid silver;
   }
+  h2 {
+    line-height: 0;
+    margin-left: 1rem;
+  }
+  .p2 {
+    font-size: small;
+  }
+  .display-filter {
+    display: block; /* Effacement du Flexbox d'origin inline-flex*/
+  }
+  #filter ul {
+    display: block; /* Valeur par défaut*/
+  }
+
   .fa-search {
     display: inline;
   }
-
   input {
-    width: 100%;
+    width: 50%;
   }
   span {
     display: none;
@@ -529,16 +525,6 @@ footer {
     border-bottom-left-radius: 15px;
     -moz-border-radius-topleft: 15px;
     border-top-left-radius: 15px;
-  }
-  #filter ul {
-    display: block; /* Valeur par défaut*/
-  }
-
-  h2 {
-    line-height: 0;
-  }
-  #filter ul li {
-    margin: 0.5rem;
   }
 
   .First-section {
@@ -550,6 +536,7 @@ footer {
     -moz-box-ordinal-group: 2;
     order: 1;
     margin: 2rem 0;
+    padding: 0;
     width: inherit; /* propriété prend la valeur calculée de la propriété pour l'élément parent, correction des débordements via 
     Devtools*/
     -moz-border-radius: inherit;
@@ -591,15 +578,24 @@ footer {
   }
   .Footer {
     display: block;
-    margin-right: 0;
-  }
-  .About-logding {
-    margin: 1.5rem 0 1.5rem 0;
   }
 }
 
-@media screen and (max-width: 320px) /* Pour les petites résolutions */ {
-  body {
-    box-sizing: border-box;
+@media screen and (max-width: 320px) {
+  .image {
+    width: 100%;
+  }
+  .link-register-nav {
+    position: absolute;
+    top: 1em;
+    left: 12em;
+  }
+  .place-1-activity,
+  .place-3-activity,
+  .place-2-activity,
+  .place-5-activity,
+  .place-6-activity,
+  .place-4-activity {
+    width: 240px;
   }
 }
