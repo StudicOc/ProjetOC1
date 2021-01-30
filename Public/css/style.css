@@ -16,20 +16,16 @@ body {
 }
 .logo {
   height: 3em;
-  width: 5em;
-  padding: 45px 0px 0px 20px;
-  margin-right: 43rem;
 }
 
 nav {
   display: -moz-box;
   display: flex; /* Les éléments s'alignent sur l'axe*/
+  justify-content: flex-end; /* L'alignement des éléments se fait sur l'axe principal*/
 }
 nav ul {
   display: -moz-inline-box;
   display: inline-flex; /* Les éléments s'alignent sur l'axe*/
-  -moz-box-align: center;
-  align-items: center; /* gestion de l'alignement vertical au centre */
 }
 nav ul li {
   list-style-type: none;
@@ -154,21 +150,15 @@ h1 {
   padding: 2px 0 0 10px;
   margin-bottom: 45px;
 }
-.p2 {
-  margin-bottom: 1rem;
-}
 
 .fa-info {
   margin: 0rem 0.3rem; /* espace droit entre le logo et p */
   border: 2.5px solid #f2f2f2;
-  width: 1em; /* pour un rendu carré */
-  height: 1em; /* pour un rendu carré */
   -moz-border-radius: 50%;
   border-radius: 50%; /* rendu ideal pour un cercle*/
   color: #0065fc; /*couleur du logo*/
-  padding: 6px; /*marge intérieur*/
+  padding: 1em; /*marge intérieur*/
   font-size: 0.4em; /*taille du logo*/
-  display: inline;
 }
 
 h2 {
@@ -418,7 +408,7 @@ h4 {
 .mainfooter {
   font-size: 0.8rem;
   background-color: #f2f2f2;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .mainfooter li {
@@ -452,7 +442,8 @@ h4 {
   }
 
   .parent {
-    display: grid;
+    display: inline-flex;
+    flex-wrap: wrap; /*Les élements reviennent à la ligne */
   }
 
   .First-section {
@@ -469,9 +460,8 @@ h4 {
     margin: 0 12rem;
   }
   .Article-activity-flex {
-    display: block;
-    margin-left: 14rem;
-    margin-bottom: 4rem;
+    display: inline-flex;
+    flex-wrap: wrap; /*retour à la ligne des élements */
   }
 
   .item-2-3-flex,
@@ -486,7 +476,7 @@ h4 {
   }
 
   .About-logding {
-    margin: 0 5rem 0 5rem;
+    margin: inherit;
   }
   .Footer {
     margin-right: 0;
@@ -512,20 +502,18 @@ h4 {
   .link-register-nav {
     /*retiré du flux normal*/
     position: absolute;
-    top: 12px;
-    right: 3px;
+    top: 1em;
+    left: 15em;
   }
   .Accommodation {
     border-top: none;
-    border-bottom: 2px solid #0065fc;
-    padding: 5px 30px 0px 50px;
+    border-bottom: medium solid #0065fc;
   }
   .display-filter {
     display: block; /* Effacement du Flexbox d'origin inline-flex*/
   }
   .activity {
-    border-bottom: 2px solid silver;
-    padding: 5px 70px 0px 50px;
+    border-bottom: medium solid silver;
   }
   .fa-search {
     display: inline;
@@ -608,9 +596,6 @@ h4 {
 }
 
 @media screen and (max-width: 320px) /* Pour les petites résolutions */ {
-  .link-register-nav {
-    margin-left: 12rem;
-  }
   .activity {
     border-bottom: 2px solid silver;
     padding: 0px 35px 0px 32px;
@@ -644,24 +629,14 @@ h4 {
   #filter ul {
     display: block;
   }
-
+  .image {
+    width: auto;
+  }
   .Second-section {
     -moz-box-ordinal-group: 2;
     order: 1;
     width: -moz-min-content;
     width: min-content;
-    margin-left: 3rem;
-  }
-
-  .Second-section article {
-    width: auto;
-  }
-
-  .text-img {
-    display: contents; /*L’élément ne génère aucune boite à l’affichage mais ses enfants oui*/
-  }
-  .Last-section {
-    margin: 0 0rem 3rem 0.5rem;
   }
 
   .Article-activity-flex {
