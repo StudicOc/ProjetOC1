@@ -22,7 +22,7 @@ body {
   display: -moz-box;
   display: flex;
   justify-content: space-between; /* L'alignement des éléments se fait sur l'axe principal*/
-  padding: 16px; /* Pour avoir un bon espacement*/
+  align-items: flex-end;
 }
 
 .nav-bar ul {
@@ -110,8 +110,6 @@ button {
   display: inline-flex;
   -moz-box-align: center;
   align-items: center;
-  -moz-box-pack: start;
-  justify-content: flex-start;
   font-weight: bold;
   border: 3px solid #f2f2f2;
   -moz-border-radius: 3rem;
@@ -580,7 +578,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) /* Pour les écrans à taille réduite */ {
   .image {
     width: 100%;
   }
