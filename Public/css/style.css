@@ -16,13 +16,13 @@ body {
 }
 .logo {
   height: 3em;
+  margin: 1rem 0 0 1rem;
 }
 
 .nav-bar {
   display: -moz-box;
   display: flex;
   justify-content: space-between; /* L'alignement des éléments se fait sur l'axe principal*/
-  align-items: flex-end;
 }
 
 .nav-bar ul {
@@ -462,6 +462,7 @@ footer {
   .Article-activity-flex {
     display: inline-flex;
     flex-wrap: wrap; /*retour à la ligne des élements */
+    justify-content: center;
   }
   .Last-section .article-section-activity {
     width: max-content;
