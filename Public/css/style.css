@@ -13,6 +13,7 @@ body {
   max-width: 1168px;
   box-shadow: 0 0 10px #f2f2f2;
   -moz-box-shadow: 0 0 10px #f2f2f2;
+  background-color: red;
 }
 .logo {
   height: 3em;
@@ -140,7 +141,7 @@ h1 {
 .fa-child,
 .fa-heart,
 .fa-dog {
-  color: #0065fc;
+  color: red;
   width: 1rem; /* pour un rendu carré */
   height: 1rem; /* pour un rendu carré */
   -moz-border-radius: 50%;
