@@ -613,7 +613,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 350px) /* Pour les écrans à taille réduite */ {
+@media screen and (max-width: 340px) /* Pour les écrans à taille réduite */ {
   /*retiré du flux normal*/
   .link-register-nav {
     position: absolute;
