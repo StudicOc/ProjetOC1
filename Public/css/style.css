@@ -508,7 +508,12 @@ footer {
     order: 2;
     text-align: center;
   }
+<<<<<<< HEAD
   .nav-bar ul, .nav-bar li {
+=======
+  .nav-bar ul,
+  .nav-bar li {
+>>>>>>> c2014e14f068264eb1ed31f2f2e120b36391b893
     width: 100%;
   }
 
@@ -607,7 +612,11 @@ footer {
   .image {
     width: 220px;
   }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> c2014e14f068264eb1ed31f2f2e120b36391b893
   h1 {
     font-size: 1rem;
   }
