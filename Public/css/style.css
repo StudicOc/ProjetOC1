@@ -9,40 +9,44 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   max-width: 1168px;
   box-shadow: 0 0 10px #f2f2f2;
   -moz-box-shadow: 0 0 10px #f2f2f2;
 }
-.logo {
-  height: 3em;
-  margin: 1rem 0 0 1rem;
-}
 
 .nav-bar {
-  display: -moz-box;
   display: flex;
   justify-content: space-between; /* L'alignement des éléments se fait sur l'axe principal*/
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 0.75rem;
+}
+
+.nav-bar .logo {
+  width: 100px;
 }
 
 .nav-bar ul {
-  display: -moz-box;
+  margin-left: auto;
   display: flex;
   align-items: center;
   list-style-type: none;
 }
 
-.nav-bar ul li a {
-  padding: 16px; /* padding entre les liens, espace*/
-}
-.link-register-nav {
-  color: #0065fc;
-  font-weight: bold;
+.nav-bar ul li {
+  padding: 1rem; /* padding entre les liens, espace*/
 }
 
 .Accommodation {
   color: #0065fc;
   border-top: medium solid #0065fc;
+}
+
+.link-register-nav {
+  color: #0065fc;
+  font-weight: bold;
 }
 
 .Tittle-header {
@@ -421,6 +425,7 @@ footer {
   margin-bottom: 0.8rem;
   font-size: 0.8rem;
 }
+
 @media screen and (min-width: 1000px) /* Pour les grands écrans */ {
   body {
     max-width: 1168px;
@@ -447,19 +452,11 @@ footer {
   }
 }
 @media screen and (max-width: 999px) /* Pour les tablettes */ {
-  .logo {
-    padding: 0;
-    margin-right: 15rem;
-  }
-
   #filter ul {
     display: block; /* Valeur par défaut*/
   }
   #filter ul li {
     margin: 0.5rem;
-  }
-  .Accommodation {
-    padding-top: 1.5rem;
   }
 
   .First-section {
@@ -493,10 +490,6 @@ footer {
   }
 }
 @media screen and (max-width: 743px) {
-  .logo {
-    margin-right: 0;
-  }
-
   .Lodging-article {
     display: block;
   }
@@ -508,24 +501,21 @@ footer {
   }
 }
 @media screen and (max-width: 600px) {
-  .nav-bar {
-    display: block;
+  .nav-bar .menu-item {
+    order: 1;
   }
   .nav-bar ul {
-    justify-content: center;
+    order: 2;
+    text-align: center;
+  }
+  .nav-bar ul, .nav-bar li {
+    width: 100%;
   }
 
-  /*retiré du flux normal*/
-  .link-register-nav {
-    position: absolute;
-    left: 15rem;
-    top: 1rem;
-  }
   .Accommodation {
     border-top: none;
     border-bottom: medium solid #0065fc;
   }
-
   .activity {
     border-bottom: medium solid silver;
   }
@@ -613,21 +603,11 @@ footer {
     display: block;
   }
 }
-
 @media screen and (max-width: 340px) /* Pour les écrans à taille réduite */ {
-  /*retiré du flux normal*/
-  .link-register-nav {
-    position: absolute;
-    left: 15em;
-  }
   .image {
     width: 220px;
   }
-  .link-register-nav {
-    position: absolute;
-    top: 1em;
-    left: 12em;
-  }
+  
   h1 {
     font-size: 1rem;
   }
