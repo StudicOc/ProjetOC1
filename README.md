@@ -1,15 +1,15 @@
 # Projet_2_OC
-Premier site web à réaliser sur du CSS, sans JS, librairies ou jquery.
+First website to build on CSS, without JS, libraries or jquery.
 
-Le site reservia  permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
+The reservia site allows users to find accommodation and activities in the city of their choice. Accommodation can also be treated by theme, for example their budget or their atmosphere.
 
-La conception du site à été élaboré avec une mise en page sur du  Flexbox, afin de suivre une bonne intégration de la maquette. 
+The design of the site was developed with a layout on the Flexbox, in order to follow a good integration of the model.
 
-La hiéarchisation du site se base sur les nouvelles balises sémantiques HTML5 pour une meilleure accessibilité des contenu pour les personnes nécessitant des logiciels de lecture de site pour consulter le web, mais aussi cela va permettre aux robots d’indexations de mieux interpréter votre page web, et donc de cibler le réel contenu que vous souhaitez mettre en avant.
+The hierarchy of the site is based on the new semantic HTML5 tags for better accessibility of content for people requiring site reading software to consult the web, but also this will allow indexing robots to better interpret your web page, and therefore target the actual content that you want to highlight.
 
 
-Outils :
-Maquette mirroir, délimitation des zones.
-Stratégie et tecnhiques SEO du html5.
-Responsive design, analyse de l'adaptation des écrans. 
+Tools :
+Model mirror, delimitation of zones.
+SEO strategy and techniques of html5.
+Responsive design, analysis of screen adaptation.
 
